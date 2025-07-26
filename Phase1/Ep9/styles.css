@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    background-color: #F8F1E7;
+    display: flex;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 0.5em;
+}
+
+#coin {
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle at 30% 30%, #FFD700, #DAA520);
+    border-radius: 50%;
+    border: 16px solid #B8860B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 120px;
+    user-select: none;
+    box-shadow: 0px 0px 30px 12px #FFD700;
+    text-shadow: 2px 2px 4px black;
+}
+
+#coin-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    flex: 1;
+    border-right: 3px solid black;
+}
+
+#purchasables-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#upgrades-container {
+    flex: 1;
+}
+
+#buildings-container {
+    flex: 2;
+    border-top: 3px solid black;
+}
+
+.gold-count-displays {
+    font-size: 30px;
+    margin-bottom: 16px;
+}
+
+.building {
+    min-height: 32px;
+    border: 1px solid black;
+    margin: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.building > * {
+    flex: 1;
+}
+
+.building > p:first-of-type {
+    font-weight: bold;
+}
